@@ -8,6 +8,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "15px",
+    },
+    screens: {
+      sm: "640px",
+      md: "76px",
+      lg: "960px",
+      xl: "1200px",
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",
@@ -56,12 +66,6 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-    },
-    screen: {
-      sm: "640px",
-      md: "76px",
-      lg: "960px",
-      xl: "1200px",
     },
   },
   plugins: [require("tailwindcss-animate")],
